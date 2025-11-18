@@ -2,25 +2,20 @@ FROM node:18
 
 WORKDIR /app/server
 
-# Copy server code
 COPY server/ ./
 
-# Copy shared folder into /app/shared
 COPY shared/ ../shared/
 
-# Copy config.js into /app/server
 COPY config.js /app/server/config.js
 
-# Install dependencies
+COPY server/.gitignore ./
+
 RUN npm install
 
-# Install nodemon globally
 RUN npm install -g nodemon
 
 RUN npm install --save-dev nodemon
 
-# Expose backend port
 EXPOSE 5000
 
-# Start server
 CMD ["nodemon", "index.js"]
