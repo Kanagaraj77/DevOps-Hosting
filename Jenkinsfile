@@ -15,6 +15,13 @@ pipeline {
       }
     }
 
+    stage('Setup Docker Buildx') {
+      steps {
+        echo 'Setting up Docker Buildx...'
+        sh "docker buildx create --use || true"
+      }
+    }
+
     stage('Build & Push UCAS') {
       steps {
         echo "Building Docker images for UCAS..."
