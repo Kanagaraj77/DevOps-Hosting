@@ -8,7 +8,7 @@ COPY shared/ ../shared/
 
 COPY config.js /app/server/config.js
 
-COPY server/.gitignore ./
+# COPY server/.gitignore ./
 
 RUN npm install
 
