@@ -1,0 +1,283 @@
+
+
+.sec_box{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap:20px;
+    .headbox{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subhead{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .valbox{
+        display: grid;
+        grid-template-columns: 20% 20%;
+        gap:50px;
+        .ico_bx{
+            background-color: #f0f9ff;
+            font-size: 38px;
+            border-radius: 10px;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0ea5e9;
+        }
+        .bx2{
+            color: #41a593;
+            background-color: #eafaf7;
+        }
+        .conbx{
+            .title{
+                color:#919092;
+                font-size: 16px;
+            }
+            .price{
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+        .val1{
+            display: flex;
+            gap:20px;
+        }.val2{
+            display: flex;
+            gap:20px;
+        }
+    }
+    .box1{
+        border:1px solid blue;
+    }
+    .box2{
+        border:1px solid green;
+    }
+}
+.orderbox_div1 img {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.greetingbox img {
+    height: 100%;
+  }
+  .greetingbox_img {
+    height: 180px;
+  }
+  .greetingbox p {
+    font-size: 13px;
+    color: beige;
+    line-height: 30px;
+  }
+  .orderbox {
+    /* display: flex;
+    margin-top: 20px; */
+    display: grid  !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    margin-top: 20px;
+  }
+  .order-chart {
+    /* height: 700px; */
+  }
+  
+  .dashboard-box {
+    /* height: 450px !important;
+      overflow: hidden; */
+    margin: 20px;
+    color: aliceblue;
+    .greetingbox {
+      height: 100%;
+      border-radius: 5px;
+      background-color: #0f172a;
+      padding: 20px;
+      background-image: url("/public/Images/svgviewer-output.svg");
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .dh_box_body {
+      display: grid;
+      /* grid-template-columns: 1fr; */
+      gap: 10px 10px;
+      padding: 25px 0px;
+      .dh_order_statics {
+        color: #000 !important;
+        height: 100% !important;
+        background-color: #fff;
+        position: relative;
+        overflow: hidden;
+        .order_chart {
+          height: 100% !important;
+        }
+        .profit_pie_chart{
+         border: 1px solid red;
+         display: flex;
+         align-items: flex-start;
+         justify-content: start !important;
+        }
+      }
+  
+      .inbox {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+  
+      .orderbox {
+        display: flex;
+        gap: 20px;
+  
+        .orderbox_head {
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          background-color: #fff;
+          border-radius: 10px;
+          display: grid;
+          gap: 30px;
+          grid-template-columns: repeat(1, 1fr);
+          justify-content: space-between;
+        }
+        .orderbox_head_1 {
+          color: #5cccf8;
+          font-weight: 600;
+        }
+        .orderbox_head_2 {
+          color: #f7ca4c;
+          font-weight: 600;
+        }
+        .orderbox_head_3 {
+          color: #56c5a0;
+          font-weight: 600;
+        }
+        .orderbox_head_4 {
+          color: #9b85f6;
+          font-weight: 600;
+        }
+        .orderbox_div1 img {
+          height: 100%;
+          object-fit: cover;
+          max-width: 250px;
+          border-radius: 10px;
+        }
+        .order_box_div {
+          margin-top: 15px;
+          margin-left: 15px;
+        }
+        .orderbox_div1 {
+          display: flex;
+          gap: 15px;
+          align-items: center;
+          .order_content_box {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        .order_content_box {
+          text-transform: uppercase;
+          font-size: 17px;
+        }
+        .order_icons {
+          height: 100%;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .chart_form_input{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  
+  @media (width <= 1450px) {
+    .greetingbox {
+      height: 220px !important;
+    }
+    .dashboard-box {
+      margin: 20px;
+      color: aliceblue;
+      .dh_box_body {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        .dh_order_statics {
+          
+          /* padding: 10px 0px !important; */
+          .order-chart {
+            color: #000 !important;
+          }
+          .order-chart .red {
+            height: 100% !important;
+          }
+        }
+        .inbox {
+          gap: 20px;
+        }
+      }
+      .orderbox {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .orderbox_div1 img {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+    }
+  }
+  @media (width <= 1150px) {
+    .dashboard-box {
+      .dh_box_body {
+        grid-template-columns: repeat(1, 1fr);
+        .dh_order_statics {
+          .order-chart {
+          }
+          .order-chart .red {
+          }
+        }
+        .inbox {
+        }
+      }
+      .orderbox {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        .orderbox_div1 img {
+          height: 100%;
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  @media (width <= 650px) {
+    .dashboard-box {
+      .dh_box_body {
+        .dh_order_statics {
+          .order-chart {
+          }
+          .order-chart .red {
+          }
+        }
+        .inbox {
+        }
+      }
+      .orderbox {
+        grid-template-columns: repeat(1, 1fr) !important;
+        .order_content_box {
+          font-size: 22px !important;
+        }
+        .order_icons {
+          font-size: 50px !important;
+        }
+      }
+    }
+  
+    .greetingbox {
+      height: 100% !important;
+      img {
+        display: none !important;
+      }
+    }
+  }
+  

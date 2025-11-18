@@ -1,0 +1,18 @@
+.error-image {
+  width: 60%;
+
+}
+
+
+@media (max-width: 1000px) {
+  .error-container {
+    height: 70vh;
+
+  }
+
+  .error-image {
+    width: 100%;
+    object-fit: contain;
+
+  }
+}

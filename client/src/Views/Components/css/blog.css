@@ -1,0 +1,134 @@
+.blog_section {
+    min-height: 60vh;
+    background-color: #F0ECEC;
+
+}
+
+.blog_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 20px;
+    gap: 30px;
+
+}
+
+.blog_box {
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.blog_image_box {
+    flex-basis: 45%;
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+.blog_content_box {
+    flex-basis: 55%;
+}
+
+.blog_box {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.home_event_date_blog {
+    background-color: var(--trd);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.blog_title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--pri);
+    margin-bottom: 10px;
+}
+
+.blog_location {
+    font-size: 14px;
+    color: #767676;
+    font-weight: 600;
+}
+
+.blog_description {
+    font-size: 14px;
+    font-weight: 500;
+    color: #767676;
+    max-width: 280px;
+    overflow-wrap: break-word;
+}
+
+.blog_btn {
+    background-color: transparent;
+    border: 2px solid var(--pri);
+    color: var(--pri);
+    font-weight: 600;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pagination_button {
+    padding: 8px 12px;
+    background-color: var(--pri);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination_button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.page_number {
+    outline: none;
+    border: none;
+    text-align: center;
+    background: transparent;
+}
+
+.page_number.active {
+    font-weight: bold;
+    color: var(--pri);
+}
+
+@media(width<=1000px) {
+    .blog_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(width<=780px) {
+    .blog_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(width<=500px) {
+    .blog_box {
+        flex-direction: column;
+    }
+
+    .blog_image_box {
+        width: 100%;
+    }
+}

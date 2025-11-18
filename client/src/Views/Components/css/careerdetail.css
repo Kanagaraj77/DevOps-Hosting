@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.careerdetail_component {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 30px 0 30px 0;
+}
+
+.careerdetail_requirements {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  flex-basis: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 30px 0 30px 0;
+  border-radius: 5px;
+  margin: 50px 0 50px 0;
+  height: fit-content;
+}
+
+.careerdetail_description {
+  flex-basis: 70%;
+  padding: 10px;
+  font-family: "Montserrat", serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.careerdetail_req_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 10px;
+}
+
+.req_content_section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.content_section_content {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.content_section_icon {
+  font-size: 30px;
+  margin-top: 3px;
+  padding: 5px;
+}
+
+.req_content_title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--pri);
+  font-family: "Montserrat", serif;
+}
+
+.req_content_ans {
+  color: var(--sec);
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+
+.careerdetail__btn {
+  border: 1px solid var(--pri);
+  color: #fff;
+  background-color: var(--pri);
+  padding: 8px 10px;
+  gap: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  font-family: "Montserrat", serif;
+}
+
+.careerdetail__button :hover {
+  color: var(--pri);
+  background-color: transparent;
+}
+
+.ant-modal-wrap {
+  position: relative;
+  z-index: 200000000000 !important;
+  scrollbar-width: none !important;
+}
+
+.career_form {
+  .in_formSection {
+    box-shadow: none;
+    background-color: #fff;
+    padding-bottom: 0px;
+  }
+}
+
+.careerdetail_subtitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--pri);
+}
+
+.careerdetails_sub_parent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 991px) {
+  .careerdetail_component {
+    flex-direction: column;
+  }
+
+  .careerdetail_requirements {
+    flex-basis: 100%;
+  }
+
+  .careerdetail_description {
+    flex-basis: 100%;
+  }
+
+  .content_section_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .careerdetail_component {
+    padding: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .careerdetail_requirements {
+    margin: 50px 25px 50px 25px;
+  }
+}

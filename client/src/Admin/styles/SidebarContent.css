@@ -1,0 +1,324 @@
+.sidebarcont__addbtn {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--sidebar1);
+  color: #fff;
+  border-radius: 5px;
+}
+.sidebarcont__div1 {
+  display: flex;
+  text-decoration: none !important;
+  justify-content: flex-end;
+}
+.sidebarTable {
+  margin-top: 40px;
+}
+a {
+  text-decoration: none !important;
+}
+.add__button {
+  --bg-color-sub: var(--sidebar1);
+  --bg-color: var(--sidebar1);
+  position: relative;
+  width: 150px;
+  height: 42px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  text-decoration: none !important;
+}
+.add__button1 {
+  --bg-color-sub: var(--sidebar1);
+  --bg-color: var(--sidebar1);
+  position: relative;
+  width: 150px;
+  height: 42px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  text-decoration: none !important;
+}
+.add__button2{
+  width: 180px !important;
+}
+.add__button3{
+  width: 200px !important;
+}
+.add__button4{
+  width: 215px !important;
+}
+
+.add__button,
+.add__button1,
+.add__button__icon,
+.add__button__text {
+  transition: all 0.3s;
+  text-decoration: none !important;
+}
+
+.add__button .add__button__text ,.add__button1 .add__button__text{
+  transform: translateX(10px);
+  color: #eee;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.add__button .add__button__icon ,.add__button1 .add__button__icon{
+  position: absolute; 
+  /* transform: translateX(200%); */
+  right: 0px;
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add__button__icon {
+  font-size: 20px !important;
+  color: #eee !important;
+  fill: #eee !important;
+}
+
+.add__button:hover,.add__button1:hover {
+  background: var(--bg-color);
+}
+
+.add__button:hover .add__button__text,.add__button1:hover .add__button__text {
+  color: transparent;
+}
+
+.add__button:hover .add__button__icon, .add__button1:hover .add__button__icon{
+  width: 100% !important;
+  transform: translateX(0);
+}
+
+.add__button:active, .add__button1:active{
+  transform: translate(3px, 3px);
+}
+
+.add__button__brand{
+  width: 100% !important;
+  margin: 10px 0px !important;
+  padding: 10px;
+  height: 40px !important;
+}  
+
+/* variant del btn  */
+.variant__del__btn{
+  width: 170px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: F15151;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  background: #F15151;
+ }
+ 
+ .variant__del__btn, .variant__del__btn span {
+  transition: 200ms;
+ }
+ 
+ .variant__del__btn .variant__del__btn__text {
+  transform: translateX(20px);
+  color: white;
+  font-weight: bold;
+ }
+ 
+ .variant__del__btn .variant__del__btn__icon {
+  position: absolute;
+  border-left: 1px solid #F15151;
+  transform: translateX(130px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .variant__del__btn .variant__del__btn__svg{
+  scale: 1.2;
+  fill: #eee;
+ }
+ 
+ .variant__del__btn:hover {
+  background: #F15151;
+ }
+ 
+ .variant__del__btn:hover .variant__del__btn__text {
+  color: transparent;
+ }
+ 
+ .variant__del__btn:hover .variant__del__btn__icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+ }
+ 
+ .variant__del__btn:focus {
+  outline: none;
+ }
+ 
+ .variant__del__btn:active .variant__del__btn__icon svg {
+  transform: scale(0.8);
+ }
+/* variant add btn  */
+.variant__add__btn{
+  width: 160px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: F15151;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  background: #2E8B57;
+ }
+ 
+ .variant__add__btn, .variant__add__btn span {
+  transition: 200ms;
+ }
+ 
+ .variant__add__btn .variant__add__btn__text {
+  transform: translateX(20px);
+  color: white;
+  font-weight: bold;
+ }
+ 
+ .variant__add__btn .variant__add__btn__icon {
+  position: absolute;
+  border-left: 1px solid #2E8B57;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .variant__add__btn .variant__add__btn__svg{
+  scale: 1.2;
+  fill: #eee;
+ }
+ 
+ .variant__add__btn:hover {
+  background: #2E8B57;
+ }
+ 
+ .variant__add__btn:hover .variant__add__btn__text {
+  color: transparent;
+ }
+ 
+ .variant__add__btn:hover .variant__add__btn__icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+ }
+ 
+ .variant__add__btn:focus {
+  outline: none;
+ }
+ 
+ .variant__add__btn:active .variant__add__btn__icon svg {
+  transform: scale(0.8);
+ }
+
+
+ .variant__add__btn__banner{
+  width: 100px !important;
+ }
+ .variant__add__btn__banner .variant__add__btn__icon {
+  transform: translateX(60px) !important;
+ }
+ .variant__add__btn__banner:hover .variant__add__btn__icon {
+  width: 100px !important;
+  border-left: none;
+  transform: translateX(0) !important;
+ }
+
+ .variant__del__btn__banner{
+  /* width: 40px !important; */
+  width: 120px !important;
+ }
+ .variant__del__btn__banner .variant__del__btn__icon {
+  transform: translateX(80px) !important;
+  /* border-left: none !important; */
+ }
+ .variant__del__btn__banner:hover .variant__del__btn__icon {
+  width: 120px !important;
+  border-left: none;
+  transform: translateX(0) !important;
+ }
+
+ .add__modal__parent{
+  position: relative;
+ }
+ .add__modaltrg__btn1{
+  position: absolute !important;
+  height: 100% !important;
+ }
+
+ .invoice__paid__input__head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .invoice__paid__input{
+  width: 100px !important;
+  padding: 0px 10px;
+
+ }
+
+ /* item modal import */
+ .Item__modal__head .ant-upload,.Item__modal__head .ant-upload-list-item-container{
+  width: 100% !important;
+  height: 120px !important;
+ }
+ .Item__modal__head__child1 h5{
+  padding: 5px;
+  padding-top: 15px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px !important;
+  color: rgb(74,89,112);
+  text-transform: capitalize;
+  font-weight: 600;
+ }
+ .Item__modal__head__child3 h6{
+  color: #F15151;
+  font-weight: 500;
+ }
+ .Item__modal__head__child3 li{
+  list-style: circle !important;
+ }
+ .Item__ant__modal__content .ant-modal-content{
+  padding: 0px !important;
+ }
+ .Item__modal__head__line{
+  width: 100% !important;
+  padding: 0px !important;
+ }
+ .Item__modal__head__child2, .Item__modal__head__child3{
+  padding: 10px 15px;
+ }
+ .item__import_samplebtn{
+  padding: 10px 10px !important;
+  height: 40px !important;
+ }
+ .item__import_samplebtn:hover{
+    background-color: #2E8B57 !important;
+ }

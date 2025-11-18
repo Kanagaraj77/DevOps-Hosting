@@ -1,0 +1,575 @@
+/* career content sction  */
+.career_main_container {
+
+    padding: 50px;
+    text-align: center;
+    gap: 50px;
+}
+
+.career_main_header h4 {
+    color: var(--sec);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.career_main_header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--pri);
+    font-weight: 600;
+}
+
+.career_main_header p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #7e7b7b;
+
+}
+
+.career_main_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.career_main_image_section {
+    position: relative;
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+.career_main_image_section img {
+    width: 100%;
+    height: 100%;
+}
+
+.responsive_image {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.tech_tags {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.career_main_text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.career_main_text p {
+    font-size: 15px;
+    color: #7e7b7b;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* Cards */
+.card_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.card_container {
+    height: auto;
+    border: 1px solid #d8d8d8;
+    padding: 5%;
+    padding-top: 20%;
+    position: relative;
+    background-color: #fff;
+    background-image: url('/images/home/service_bottom_building.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card_container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card_logo {
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+    background-color: var(--pri);
+    color: #fff;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.card_container:hover .card_logo {
+    background-color: var(--sec);
+    cursor: pointer;
+}
+
+.card_content {
+    min-height: 300px;
+    text-align: left;
+}
+
+.card_heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #3f3e3e;
+}
+
+.card_description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.card_list {
+    list-style: none;
+    padding: 0;
+}
+
+.card_list li {
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.card_list li span {
+    color: var(--pri) !important;
+    margin-right: 8px;
+    font-size: 25px !important;
+}
+
+.card_list li:hover span {
+    color: var(--sec) !important;
+    cursor: pointer;
+}
+
+.card_button {
+    background-color: var(--pri);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.card_button:hover {
+    background-color: var(--sec);
+
+}
+
+
+/* career form  */
+.in_container {
+    gap: 50px;
+    display: flex;
+
+}
+
+
+.in_aboutUs {
+    width: 45%;
+}
+
+.in_aboutUs h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.in_aboutUs h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.in_aboutUs p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.in_imageContainer {
+    margin-top: 20px;
+    text-align: center;
+    width: 500px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.in_image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+.in_formSection {
+    flex-basis: 50%;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.in_form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.in_formTitle {
+    font-size: 20px;
+    color: #e7e7e7;
+    margin-bottom: 20px;
+    text-align: center;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--pri);
+    padding: 12px;
+    border-radius: 0px 10px;
+    width: 200px;
+    transition: background-color .5s ease-in-out;
+    cursor: pointer;
+}
+
+
+.in_formTitle:hover {
+    background-color: var(--sec);
+    border-radius: 10px 0px;
+
+
+}
+
+.in_input,
+.in_textarea,
+.in_fileInput {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+}
+
+
+.in_textarea {
+    resize: none;
+    height: 80px;
+}
+
+.in_uploadResume {
+    margin-bottom: 15px;
+}
+
+.in_uploadResume label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.in_submitButton {
+    background-color: var(--pri);
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    transition: background-color .5s ease-in-out;
+
+    width: 30%;
+}
+
+.in_submitButton:hover {
+    background-color: var(--sec);
+    border-radius: 10px 0px;
+
+}
+
+.in_container_header {
+    text-align: center;
+    padding: 20px;
+}
+
+.alternative_content {
+    flex-basis: 50%;
+    text-align: left;
+    justify-content: center;
+
+}
+
+.img_clg {
+    width: 450px;
+    object-fit: contain;
+}
+
+.alternative-para2 {
+    font-size: 15px;
+    color: #7e7b7b;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+
+
+
+@media (width<=1200px) {
+    .card_grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 60px;
+    }
+}
+
+@media(width<=900px) {
+    .career_main_content {
+        flex-direction: column;
+    }
+}
+
+@media(width<=700px) {
+    /* Careermain */
+
+    .career_main_container {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .career_main_header h4 {
+        font-size: 14px;
+    }
+
+    .career_main_header h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+
+    }
+
+    .career_main_header p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .career_main_content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .career_main_image_section {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .career_main_image_section img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .career_main_text {
+        max-width: 100%;
+    }
+
+    .career_main_text p {
+        font-size: 14px;
+        color: #7e7b7b;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    /* Card */
+    .card_grid.container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+    }
+
+    .card_container {
+        padding: 15px;
+        padding-top: 30px;
+    }
+
+    .card_heading {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .card_description {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .card_list li {
+        font-size: 12px;
+    }
+
+    .card_button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .card_logo.center img {
+        width: 50%;
+        height: auto;
+
+    }
+
+    .card_logo {
+        top: -50px;
+    }
+
+    .card_button_arrow {
+        font-size: 18px;
+    }
+
+    /* Careerform */
+
+    .career_main_header {
+        margin-top: 50px;
+        padding: 5px;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .career_main_header h4 {
+        font-size: 18px;
+    }
+
+    .career_main_header h1 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    .career_main_header p {
+        font-size: 12px;
+    }
+
+    .in_formSection {
+        padding: 30px 15px;
+
+    }
+
+    .in_container {
+        flex-direction: column;
+    }
+
+    .in_formTitle {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+        top: -30px;
+    }
+
+    .in_input,
+    .in_textarea,
+    .in_fileInput,
+    select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .in_textarea {
+        height: 80px;
+    }
+
+    .in_submitButton {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .alternative_content {
+        text-align: center;
+    }
+
+    .alternative-para2 {
+        font-size: 12px;
+        text-align: justify;
+        margin: 5px 0;
+    }
+
+    .img_clg {
+        width: 90%;
+        margin-top: 15px;
+    }
+}
+
+@media (width<=350px) {
+
+    .in_formSection {
+        padding: 30px 10px;
+
+    }
+
+    .in_input,
+    .in_textarea,
+    .in_fileInput {
+        width: 95%;
+
+    }
+
+}
+
+
+
+
+@media (width<=1000px) {
+    .in_container {
+        flex-direction: column;
+    }
+}
